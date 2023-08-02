@@ -78,7 +78,8 @@ with models.DAG(
     print(create_data_pipeline)
     run_data_pipeline = RunDataPipelineOperator(
         task_id = "run_data_pipeline",
-        data_pipeline_name = "dp-create-1642676351302-mp--1675461000"
+        data_pipeline_name = "dp-create-1642676351302-mp--1675461000",
+        project_id="dataflow-interns"
         )
  
     create_data_pipeline 

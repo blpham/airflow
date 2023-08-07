@@ -67,7 +67,6 @@ class DataPipelineHook(GoogleBaseHook):
 
         Returns the created Data Pipelines instance in JSON representation.
         """
-
         parent = self.build_parent_name(project_id, location)
         service = self.get_conn()
         self.log.info(dir(service.projects().locations()))
@@ -95,7 +94,7 @@ class DataPipelineHook(GoogleBaseHook):
         location: str = DEFAULT_DATAPIPELINE_LOCATION,
     ) -> None:
         """
-        Runs a Data Pipelines Instance using the Data Pipelines API
+        Runs a Data Pipelines Instance using the Data Pipelines API.
 
         :param data_pipeline_name:  The display name of the pipeline. In example
             projects/PROJECT_ID/locations/LOCATION_ID/pipelines/PIPELINE_ID it would be the PIPELINE_ID.
